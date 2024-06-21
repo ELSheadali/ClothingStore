@@ -1,12 +1,12 @@
 {
   "files": {
-    "main.css": "/ClothingStore/static/css/main.0c72fb6b.css",
-    "main.js": "/ClothingStore/static/js/main.c95cab4c.js",
+    "main.css": "/ClothingStore/static/css/main.cc95a67b.css",
+    "main.js": "/ClothingStore/static/js/main.1d0e9ef1.js",
     "static/js/206.76565fec.chunk.js": "/ClothingStore/static/js/206.76565fec.chunk.js",
     "index.html": "/ClothingStore/index.html"
   },
   "entrypoints": [
-    "static/css/main.0c72fb6b.css",
-    "static/js/main.c95cab4c.js"
+    "static/css/main.cc95a67b.css",
+    "static/js/main.1d0e9ef1.js"
   ]
 }
