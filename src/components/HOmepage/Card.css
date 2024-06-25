@@ -1,0 +1,46 @@
+.card {
+    border: 1px solid #000000;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 350px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    
+  }
+  
+  .card-image {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: rgb(69, 109, 252);
+    
+  }
+  
+  .item-name {
+    font-weight: bold;
+    font: 400 22px/1.7 "Baloo Tamma", Helvetica, Arial, serif;
+
+  }
+  
+  .add-to-cart {
+    background-color: rgb(31, 48, 109);
+    color:rgb(69, 109, 252);
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    font: 400 16px/1.7 "Baloo Tamma", Helvetica, Arial, serif;
+
+  }
+  
+  .add-to-cart:hover {
+    background-color: #1e1e1f;
+  }
+  

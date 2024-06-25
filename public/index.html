@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="clothingSection.css"> <!-- Adjust the path as per your project structure -->
+  <title>Clothing Section</title>
+  <style>
+    /* Example of how you might convert SCSS to CSS */
+    .clothingSection { /* styles for clothingSection */}
+    .clothingCoverImage { /* styles for clothingCoverImage */}
+    .contentBox { /* styles for contentBox */}
+    .flexCol { /* styles for flexCol */}
+    .flexRow { /* styles for flexRow */}
+    .mediumTitle { /* styles for mediumTitle */}
+    .heroTitle { /* styles for heroTitle */}
+    .placeholderRedirect { /* styles for placeholderRedirect */}
+    .flexRow1 { /* styles for flexRow1 */}
+    .wrapper1 { /* styles for wrapper1 */}
+    .image1 { /* styles for image1 */}
+    .flexRow2 { /* styles for flexRow2 */}
+    .clothingImage { /* styles for clothingImage */}
+    .image3 { /* styles for image3 */}
+    .rectangleDecoration { /* styles for rectangleDecoration */}
+    .image6 { /* styles for image6 */}
+    .separatorLine { /* styles for separatorLine */}
+    .login-popup { /* styles for login popup */}
+    .login-popup-content { /* styles for login popup content */}
+  </style>
+</head>
+<body>
+  <section class="clothingSection">
+    <img class="clothingCoverImage" src="assets/6307f030a2c97111e1377ba71e41624c.png" alt="alt text" />
+
+    <div class="contentBox">
+      <div class="flexCol">
+        <div class="flexRow">
+          <a href="/assortment" class="mediumTitle placeholderRedirect">
+            <h2>ASSORTMENT</h2>
+          </a>
+          <a href="/clothing-shop" class="heroTitle placeholderRedirect">
+            <h1>CLOTHING SHOP</h1>
+          </a>
+          <a href="/about-us" class="mediumTitle placeholderRedirect">
+            <h2>ABOUT US</h2>
+          </a>
+
+          <div class="flexRow1">
+            <img class="wrapper1" src="assets/a1787d50ef20c88a7f0b10f084ea69e9.svg" alt="alt text" />
+            <img class="image1" src="assets/e71c62de59aeabd78ab97f1227945a3b.svg" alt="alt text" onclick="openLogin()" />
+          </div>
+        </div>
+
+        <div class="flexRow2">
+          <img class="clothingImage" src="assets/1257819942cb9e3491dda5349c3babd8.png" alt="alt text" />
+          <img class="clothingImage" src="assets/ed40ee0e769fab22651e274292f8f3c2.png" alt="alt text" />
+          <img class="image3" src="assets/b8492411c8515aeac3220cc19ba61128.png" alt="alt text" />
+        </div>
+      </div>
+
+      <div class="rectangleDecoration"></div>
+    </div>
+
+    <img class="image6" src="assets/894384210e9f67d770c171929388ad34.png" alt="alt text" />
+    <img class="separatorLine" src="assets/270ed31ba8ddedf5bc7723bffcc5bfdc.png" alt="alt text" />
+  </section>
+
+  <!-- Login Popup -->
+  <div id="loginPopup" class="login-popup" style="display: none;">
+    <div class="login-popup-content">
+      <!-- Login component content here -->
+      <button onclick="closeLogin()">Close</button>
+    </div>
+  </div>
+
+  <script>
+    function openLogin() {
+      document.getElementById('loginPopup').style.display = 'block';
+    }
+
+    function closeLogin() {
+      document.getElementById('loginPopup').style.display = 'none';
+    }
+  </script>
+</body>
+</html>

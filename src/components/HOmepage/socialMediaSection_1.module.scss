@@ -1,0 +1,140 @@
+@use "../utils" as *;
+@use "../global" as *;
+
+.socialMediaSection {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.flexCol {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 35px 0px;
+  margin: 0px 0px 21px 4px;
+  max-width: 1916.007080078125px;
+}
+.rectangle {
+  position: relative;
+  width: 100%;
+  min-height: 36px;
+  background-color: rgb(69, 109, 252);
+}
+.flexRow {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  gap: 0px 10px;
+  width: 93.89%;
+  @include xs {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px 10px;
+  }
+}
+.flexColSocialMedia {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 153px;
+  min-width: 0px;
+}
+.flex_col {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.flex_row {
+  position: relative;
+  display: flex;
+  gap: 0px 6px;
+}
+.mediumTitle {
+  position: relative;
+  font: 400 24px/1.7 "Baloo Tamma", Helvetica, Arial, serif;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  @include md {
+    align-items: flex-start;
+    font-size: 22px;
+  }
+  @include xxs {
+    font-size: 20px;
+  }
+}
+.mediumTitle:hover{
+  opacity: 0.7;
+}
+
+.imageSocial{
+  position: relative;
+  margin: 0px 0px 6px;
+  width: 35px;
+  height: 35px;
+  object-fit: cover;
+}
+.flex_row1 {
+  position: relative;
+  display: flex;
+  gap: 0px 5px;
+  margin: 0px 0px 0px 1px;
+}
+
+.flex_row2 {
+  position: relative;
+  display: flex;
+  gap: 0px 5px;
+  margin: 0px 1px;
+}
+
+.mediumTitleYear {
+  position: relative;
+  display: flex;
+  margin: 180px 0px 16px;
+  font: 400 24px/1.7 "Baloo Tamma", Helvetica, Arial, serif;
+  color: rgb(0, 0, 0);
+  @include md {
+    align-items: flex-start;
+    font-size: 22px;
+  }
+  @include xs {
+    margin-top: unset;
+    margin-bottom: unset;
+    width: 100%;
+  }
+  @include xxs {
+    font-size: 20px;
+  }
+  @include tn {
+    justify-content: center;
+    text-align: center;
+  }
+}
+.mediumTitleContactSupport {
+  position: relative;
+  display: flex;
+  margin: 0px 0px 123px;
+  font: 400 24px/1.7 "Baloo Tamma", Helvetica, Arial, serif;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  @include md {
+    align-items: flex-start;
+    font-size: 22px;
+  }
+  @include xs {
+    margin-top: unset;
+    margin-bottom: unset;
+    width: 100%;
+  }
+  @include xxs {
+    font-size: 20px;
+  }
+  @include tn {
+    justify-content: center;
+    text-align: center;
+  }
+}
+.mediumTitleContactSupport:hover{
+  opacity: 0.7;
+}

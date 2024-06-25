@@ -1,0 +1,168 @@
+@use "../utils" as *;
+@use "../global" as *;
+
+.productsSection {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.flexCol {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 0px auto;
+  width: 100%;
+  max-width: 1920.0001220703125px;
+}
+.rect {
+  position: relative;
+  margin: 0px 1px 0px 0px;
+  min-height: 29px;
+  background-color: rgb(69, 109, 252);
+}
+.flexRow {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 21px 6.67% 0px auto;
+  width: 1075.9896240234375px;
+  max-width: 85%;
+}
+.flex_row {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  gap: 0px 10px;
+  @include xxs {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px 10px;
+  }
+}
+.flexRow1 {
+  position: relative;
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  gap: 0px 14px;
+  margin: 0px 0px 1px;
+  width: 495px;
+  min-width: 0px;
+  @include xxs {
+    margin-top: unset;
+    margin-bottom: unset;
+    width: 100%;
+    min-width: unset;
+  }
+  @include tn {
+    column-gap: 8px;
+  }
+}
+.rect1 {
+  position: relative;
+  width: 438px;
+  max-height: 70px; /* Added unit */
+  background-color: rgb(69, 109, 252);
+  border-radius: 18px;
+  font: 400 24px/1.7 "Baloo Tamma", Helvetica, Arial, serif;
+  font-size: 24px;           /* Font size */
+  display: inline-block;     /* Ensure proper padding */
+  border: 3px solid;    /* Increase border size, color, and style */
+  border-color: rgb(31, 48, 109);
+  padding-top: 12px;
+}
+.productIcon {
+  position: relative;
+  width: 43px;
+  height: 43px;
+  object-fit: cover;
+  cursor: pointer; /* Indicate clickable element on hover */
+}
+.productIcon:hover {
+  opacity: 0.7; /* Change opacity slightly on hover */
+}
+.content_box {
+  position: relative;
+  margin: 10px 0 0;
+  width: 180px;
+  font-size: large;
+
+  @include xxs {
+    margin-top: unset;
+    margin-bottom: unset;
+    width: 100%;
+  }
+}
+
+.dropdownLink {
+  background-color: rgb(69, 109, 252); /* Background color for the button */
+  color: black; /* Font color */
+  font: 400 24px/1.7 "Baloo Tamma", Helvetica, Arial, serif;
+  font-size: 24px; /* Font size */
+  padding: 5px 10px;
+  max-height: 50px;
+  border-radius: 18px; /* Rounding the corners of the button */
+  text-decoration: none; /* Remove underline from link */
+  display: inline-block; /* Ensure proper padding */
+  border: 3px solid; /* Increase border size, color, and style */
+  border-color: rgb(31, 48, 109);
+  text-align: center; /* Center the text horizontally */
+}
+
+.dropdownMenu {
+  background-color: rgb(69, 109, 252); /* Background color for the button */
+  border-radius: 4px;        /* Round corners of the dropdown menu */
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Add shadow */
+  border-radius: 20px;        /* Rounding the corners of the button */
+  border: 2px solid;    /* Increase border size, color, and style */
+  border-color: rgb(31, 48, 109);
+  overflow: hidden;          /* Round corners without overflow */
+}
+
+.dropdownMenuItem {
+  font: 400 24px/1.7 "Baloo Tamma", Helvetica, Arial, serif;
+  font-size: 16px;                /* Font size */
+  color: black;                    /* Font color */
+}
+
+.dropdownMenuItem:hover {
+  background-color: #e5e5e5;      /* Background color on hover */
+  color: #000;                    /* Font color on hover */
+}
+
+.productsGrid {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: start;
+  row-gap: 105px;
+  column-gap: 100px;
+  margin: 54px auto 0px;
+  width: 100%;
+  justify-content: center; /* Center the cards horizontally */
+  gap: 20px; /* Add space between the cards, adjust as needed */
+  padding: 20px; /* Optional: Add padding for better layout */
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  @include md {
+    column-gap: 32px;
+  }
+  @include xs {
+    row-gap: 80px;
+    column-gap: 16px;
+  }
+  @include tn {
+    row-gap: 50px;
+    column-gap: 8px;
+    margin: 50px auto 0px;
+  }
+}
+
+.rect2 {
+  position: relative;
+  margin: 74px 0px 0px 4px;
+  min-height: 23px;
+  background-color: rgb(69, 109, 252);
+  @include tn {
+    margin: 50px 0px 0px 4px;
+  }
+}
